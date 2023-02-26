@@ -6,9 +6,9 @@ import { Typing } from "@/utils/typing";
 // Assume the port of the data Server is 5000, for test only
 // const dataServerUrl = "http://vastback.s44.hkustvis.org";
 
-console.log(process.env.NODE_ENV);
+console.log(process.env);
 const dataServerUrl = 
-  process.env.NODE_ENV == 'production' && process.env.BASE_URL != "" ? process.env.BASE_URL : "http://localhost:8500";
+  process.env.NODE_ENV === 'production' ? "https://attention-viz.herokuapp.com" : "http://localhost:8500";
 console.log(dataServerUrl);
 
 // const $http = (Vue as any).http;
