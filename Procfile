@@ -1,1 +1,1 @@
-web: honcho -f ProcfileHoncho start
+web: pip install -r requirements.txt && honcho -f ProcfileHoncho start
