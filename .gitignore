@@ -35,6 +35,7 @@ yarn-error.log*
 *.sw?  
 
 # Python related 
+.env
 env/
 *.pyc
 node_modules/
