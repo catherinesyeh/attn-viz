@@ -88,7 +88,7 @@ def read_matrix_data(model):
         # d = json.loads(resp.text)
         # matrix_data.append(d)
 
-    matrix_data = download_all(all_urls[:12] + all_urls[36:60])
+    matrix_data = download_all(all_urls[:12])
 
     print('{} MatrixData Done! Time elapsed: {} seconds'.format(
         model, time.time()-time_start))
@@ -113,7 +113,7 @@ def read_attention_data(model):
                    rootDir.full_name, "main", f.path)
         all_urls.append(url)
 
-    attention_data = download_all(all_urls[:12] + all_urls[36:60])
+    attention_data = download_all(all_urls[:12])
 
     print('{} AttentionData Done! Time elapsed: {} seconds'.format(model,
                                                                    time.time()-time_start))
