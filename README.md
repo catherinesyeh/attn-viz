@@ -8,7 +8,7 @@ git clone https://github.com/catherinesyeh/attn-viz.git
 
 2. start app:
 ```
-honcho -f ProcfileHoncho start
+pip install -r requirements.txt && honcho -f ProcfileHoncho start
 ```
 
 3. view in browser: [http://localhost:8561/](http://localhost:8561/)
