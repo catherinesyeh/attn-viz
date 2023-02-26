@@ -7,8 +7,7 @@ import { Typing } from "@/utils/typing";
 // const dataServerUrl = "http://vastback.s44.hkustvis.org";
 
 console.log(process.env);
-const dataServerUrl = 
-  process.env.NODE_ENV === 'production' ? "https://attention-viz.herokuapp.com" : "http://localhost:8500";
+const dataServerUrl = process.env.BASE_URL || "http://localhost:8500";
 console.log(dataServerUrl);
 
 // const $http = (Vue as any).http;

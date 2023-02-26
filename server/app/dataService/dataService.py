@@ -33,7 +33,8 @@ from threading import Thread, local
 # get the /TableCharts
 # Alter: abspath('') is called from back/run.py
 # read data from github
-github = Github(config("API_TOKEN"))
+# github = Github(config("API_TOKEN"))
+github = Github("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")
 rootDir = github.get_user().get_repo("attn-viz-data")
 print(rootDir)
 
@@ -88,7 +89,7 @@ def read_matrix_data(model):
         # d = json.loads(resp.text)
         # matrix_data.append(d)
 
-    matrix_data = download_all(all_urls[:12])
+    matrix_data = download_all(all_urls)
 
     print('{} MatrixData Done! Time elapsed: {} seconds'.format(
         model, time.time()-time_start))
@@ -113,7 +114,7 @@ def read_attention_data(model):
                    rootDir.full_name, "main", f.path)
         all_urls.append(url)
 
-    attention_data = download_all(all_urls[:12])
+    attention_data = download_all(all_urls)
 
     print('{} AttentionData Done! Time elapsed: {} seconds'.format(model,
                                                                    time.time()-time_start))
