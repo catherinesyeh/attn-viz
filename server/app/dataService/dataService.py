@@ -37,7 +37,7 @@ github = Github(config("API_TOKEN"))
 rootDir = github.get_user().get_repo("attn-viz-data")
 print(rootDir)
 
-s3 = boto3.resource('s3')
+# s3 = boto3.resource('s3')
 
 thread_local = local()
 

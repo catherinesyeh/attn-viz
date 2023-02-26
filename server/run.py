@@ -8,7 +8,8 @@ load_dotenv()
 # try:
 # socketio.run(app, host='localhost', port=8500, use_reloader=False, debug=True)
 
-port = int(os.environ.get("PORT", 8500))
-app.run(host='0.0.0.0', port=port, use_reloader=False, debug=True)
+# port = int(os.environ.get("PORT", 8500))
+host = os.environ.get("HOST", '0.0.0.0')
+app.run(host=host, port=8500, use_reloader=False, debug=True)
 # except:
 #print("Something wrong!")
