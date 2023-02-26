@@ -33,8 +33,7 @@ from threading import Thread, local
 # get the /TableCharts
 # Alter: abspath('') is called from back/run.py
 # read data from github
-# github = Github(config("API_TOKEN"))
-github = Github("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")
+github = Github(config("API_TOKEN"))
 rootDir = github.get_user().get_repo("attn-viz-data")
 print(rootDir)
 
