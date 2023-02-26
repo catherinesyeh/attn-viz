@@ -11,11 +11,17 @@ git clone https://github.com/catherinesyeh/attn-viz.git
 cd attn-viz
 ```
 
-3. start app:
+3. create .env file: replace **[TOKEN]** with token from Catherine
+```
+touch .env
+echo "API_TOKEN=[TOKEN]" > .env
+```
+
+4. start app:
 ```
 pip install -r requirements.txt && honcho -f ProcfileHoncho start
 ```
 
-4. view in browser: [http://localhost:8561/](http://localhost:8561/)
+5. view in browser: [http://localhost:8561/](http://localhost:8561/)
 
 *Note: data may take 1-2 minutes to load initially.*
