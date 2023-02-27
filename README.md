@@ -19,7 +19,7 @@ echo "API_TOKEN=[TOKEN]" > .env
 
 4. start app:
 ```
-pip install -r requirements.txt && honcho -f ProcfileHoncho start
+source env/bin/activate && honcho -f ProcfileHoncho start
 ```
 
 5. view in browser: [http://localhost:8561/](http://localhost:8561/)
