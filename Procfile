@@ -1,1 +1,1 @@
-web: pip install -r requirements.txt && honcho -f ProcfileHoncho start
+web: source env/bin/activate && honcho -f ProcfileHoncho start

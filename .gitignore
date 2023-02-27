@@ -36,7 +36,6 @@ yarn-error.log*
 
 # Python related 
 .env
-env/
 *.pyc
 node_modules/
 npm-debug.log
